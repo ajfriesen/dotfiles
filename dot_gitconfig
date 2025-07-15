@@ -1,0 +1,34 @@
+[includeIf "gitdir:~/github/"]
+  path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/github-scs/"]
+  path = ~/.gitconfig-github-scs
+
+[includeIf "gitdir:~/git-gridscale/"]
+  path = ~/.gitconfig-gridscale
+
+[includeIf "gitdir:~/gitlab-public/"]
+  path = ~/.gitconfig-gitlab-public
+
+[init]
+  defaultBranch = main
+
+[core]
+    editor = nvim
+[push]
+    default = current
+
+
+# [user]
+# 	email = andre.friesen@gmail.com
+
+# Reuse Recorded Resolution
+# https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/
+# Finally, if you're rebasing or cherry-picking a lot and you've ever run into the same conflict more than once, you can turn on a feature where Git memorizes the conflict and the resolution to it. If it ever sees that same conflict again, it will automatically re-solve it for you.
+# You can easily turn it on with the config setting rerere.enabled and you can further ask it to automatically stage it for you with rerere.autoUpdate
+[rerere]
+	enabled = true
+	autoUpdate = true
+
+[rebase]
+	instructionFormat = (%an <%ae>) %s
