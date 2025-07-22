@@ -1,3 +1,9 @@
+# default
+[user]
+	name = Andrej Friesen
+	username = ajfriesen
+	email = andre.friesen@gmail.com
+
 [includeIf "gitdir:~/github/"]
   path = ~/.gitconfig-github
 
@@ -18,9 +24,6 @@
 [push]
     default = current
 
-
-# [user]
-# 	email = andre.friesen@gmail.com
 
 # Reuse Recorded Resolution
 # https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/
