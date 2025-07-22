@@ -23,6 +23,13 @@ monitor=,preferred,auto,auto
 monitor= eDP-1, 1920x1080@60, 0x0, 1
 {{- end }}
 
+{{- if eq .chezmoi.hostname "archdesktop" }}
+# archdesktop specifc monitor config
+monitor= DP-2, 2560x1440@120, 2560x0, 1
+monitor= DP-3, 2560x1440@120, 0x0, 1
+{{- end }}
+
+
 ###################
 ### MY PROGRAMS ###
 ###################
