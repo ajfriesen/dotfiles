@@ -1,0 +1,10 @@
+#
+# ~/.zsh_profile
+#
+
+[[ -f ~/.zshrc ]] && . ~/.zshrc
+
+# hyprland uwsm start
+if uwsm check may-start; then
+  exec uwsm start hyprland-uwsm.desktop
+fi
